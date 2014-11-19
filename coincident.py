@@ -42,6 +42,11 @@ class TestCoincident(unittest.TestCase):
         res = findCoincidentDiff([9,9,9], [0,1,10], 1)
         self.assertTrue(res==[2])
 
+    def test_diff2(self):
+        res = findCoincidentDiff([9,9,9], [0,1,8], 1)
+        self.assertTrue(res==[2])
+
+
     def test_diffLength(self):
         res = findCoincident([1,2], [1,2,3,4])
         self.assertTrue(res==[0,1])
